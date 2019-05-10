@@ -10,6 +10,15 @@
 
 import React from "react";
 
-const LionsExhibit = () => null;
+function LionsExhibit() {
+    return (
+        <div>
+            <article className="lions">
+                <h2>Lions</h2>
+                <p>The mane is the most recognisable feature of the species</p>
+            </article>
+        </div>
+    );
+};
 
 export default LionsExhibit;

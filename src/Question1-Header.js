@@ -1,3 +1,5 @@
+import React from 'react'
+
 /* DELETE THIS LINE AND WRITE THE ANSWER TO QUESTION 1 HERE */
 
 /*
@@ -9,8 +11,7 @@
  */
 
 function Header() {
-  return (
-    <h1>Open the QuestionX files inside the src folder and complete them</h1>
+  return (<h1> Open the QuestionX files inside the src folder and complete them </h1>
   );
 }
 

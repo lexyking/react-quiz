@@ -18,13 +18,26 @@ class ImageGallery extends Component {
     };
   }
 
+
+
+
   fetchData = () => {
-    fetch().then(res => res.json());
-  };
+    fetch('https://auspicious-baritone.glitch.me/gorilla')
+      .then(res => res.json())
+      .then(val => JSON.stringify(val))
+      .then(data => { this.setState({ imgSrc: data }) });
+  }
+
+
+
+
 
   render() {
-    return <img src={this.state.imgSrc} alt="An animal" />;
+
+    // this.fetchData();
+    return (<img src={this.state.imgSrc} alt="An animal" />);
   }
 }
+
 
 export default ImageGallery;
